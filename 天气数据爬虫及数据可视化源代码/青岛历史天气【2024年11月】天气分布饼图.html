@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>天气数据分析 - 饼图</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #4CAF50;
+            overflow: hidden;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #45a049;
+        }
+        .chart-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            max-width: 1200px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="青岛历史天气【2024年11月】温度散点图.html">散点图分析</a>
+        <a href="青岛历史天气【2024年11月】天气分布饼图.html">天气分布饼图</a>
+        <a href="青岛历史天气【2024年11月】词云图.html">词云图分析</a>
+        <a href="青岛历史天气【2024年11月】温度趋势图.html">温度趋势图</a>
+    </div>
+    <div class="chart-container">
+        <div><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="94d9b039c3184ba692d81b89ef78c569" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_94d9b039c3184ba692d81b89ef78c569 = echarts.init(
+            document.getElementById('94d9b039c3184ba692d81b89ef78c569'), 'white', {renderer: 'canvas'});
+        var option_94d9b039c3184ba692d81b89ef78c569 = {
+    "backgroundColor": "#e4cf8e",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u9752\u5c9b\u5e02\u5929\u6c14\u5206\u5e03",
+            "colorBy": "data",
+            "legendHoverLink": true,
+            "selectedMode": false,
+            "selectedOffset": 10,
+            "clockwise": true,
+            "startAngle": 90,
+            "minAngle": 0,
+            "minShowLabelAngle": 0,
+            "avoidLabelOverlap": true,
+            "stillShowZeroSum": true,
+            "percentPrecision": 2,
+            "showEmptyCircle": true,
+            "emptyCircleStyle": {
+                "color": "lightgray",
+                "borderColor": "#000",
+                "borderWidth": 0,
+                "borderType": "solid",
+                "borderDashOffset": 0,
+                "borderCap": "butt",
+                "borderJoin": "bevel",
+                "borderMiterLimit": 10,
+                "opacity": 1
+            },
+            "data": [
+                {
+                    "name": "\u591a\u4e91",
+                    "value": 8
+                },
+                {
+                    "name": "\u6674",
+                    "value": 7
+                },
+                {
+                    "name": "\u591a\u4e91~\u6674",
+                    "value": 5
+                },
+                {
+                    "name": "\u9634~\u591a\u4e91",
+                    "value": 3
+                },
+                {
+                    "name": "\u9634~\u6674",
+                    "value": 2
+                },
+                {
+                    "name": "\u591a\u4e91~\u5c0f\u96e8",
+                    "value": 1
+                },
+                {
+                    "name": "\u5c0f\u96e8~\u591a\u4e91",
+                    "value": 1
+                },
+                {
+                    "name": "\u591a\u4e91~\u9634",
+                    "value": 1
+                },
+                {
+                    "name": "\u5c0f\u96e8~\u9634",
+                    "value": 1
+                },
+                {
+                    "name": "\u9634",
+                    "value": 1
+                }
+            ],
+            "radius": [
+                "40%",
+                "70%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "margin": 8,
+                "formatter": "{b}: {c} ({d}%)",
+                "valueAnimation": false
+            },
+            "labelLine": {
+                "show": true,
+                "showAbove": false,
+                "length": 15,
+                "length2": 15,
+                "smooth": false,
+                "minTurnAngle": 90,
+                "maxSurfaceAngle": 90
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u591a\u4e91",
+                "\u6674",
+                "\u591a\u4e91~\u6674",
+                "\u9634~\u591a\u4e91",
+                "\u9634~\u6674",
+                "\u591a\u4e91~\u5c0f\u96e8",
+                "\u5c0f\u96e8~\u591a\u4e91",
+                "\u591a\u4e91~\u9634",
+                "\u5c0f\u96e8~\u9634",
+                "\u9634"
+            ],
+            "selected": {},
+            "show": true,
+            "left": "2%",
+            "top": "15%",
+            "orient": "vertical",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "title": [
+        {
+            "show": true,
+            "text": "\u9752\u5c9b\u5e0211\u6708\u4efd\u5929\u6c14\u5206\u5e03",
+            "target": "blank",
+            "subtarget": "blank",
+            "right": "50%",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            }
+        }
+    }
+};
+        chart_94d9b039c3184ba692d81b89ef78c569.setOption(option_94d9b039c3184ba692d81b89ef78c569);
+    </script>
+</body>
+</html>
+</div>
+        <h3>分析报告：</h3>
+        <h2>青岛市11月份天气分布</h2>
+        <p>天气比例饼状图显示，多云天气占比为26.67%，晴天气占比为23.33%，多云~晴天气占比为16.67%，阴~多云天气占比为10.00%，阴~晴天气占比为6.67%，多云~小雨天气占比为3.33%，小雨~多云天气占比为3.33%，多云~阴天气占比为3.33%，小雨~阴天气占比为3.33%，阴天气占比为3.33%，</p>
+    </div>
+</body>
+</html>

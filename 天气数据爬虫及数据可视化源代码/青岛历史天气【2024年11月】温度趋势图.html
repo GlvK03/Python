@@ -1,0 +1,572 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>天气数据分析 - 温度趋势图</title>
+    <style>
+    body {
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #4CAF50;
+            overflow: hidden;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #45a049;
+        }
+        .chart-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            max-width: 1200px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="青岛历史天气【2024年11月】温度散点图.html">散点图分析</a>
+        <a href="青岛历史天气【2024年11月】天气分布饼图.html">天气分布饼图</a>
+        <a href="青岛历史天气【2024年11月】词云图.html">词云图分析</a>
+        <a href="青岛历史天气【2024年11月】温度趋势图.html">温度趋势图</a>
+    </div>
+    <div class="chart-container">
+        <div><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="7f186c35d0374b3d93dbe910476b07f8" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_7f186c35d0374b3d93dbe910476b07f8 = echarts.init(
+            document.getElementById('7f186c35d0374b3d93dbe910476b07f8'), 'white', {renderer: 'canvas'});
+        var option_7f186c35d0374b3d93dbe910476b07f8 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "red",
+        "skyblue",
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u6700\u9ad8\u6c14\u6e29",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "stackStrategy": "samesign",
+            "data": [
+                [
+                    "2024-11-01 \u661f\u671f\u4e94 ",
+                    19.0
+                ],
+                [
+                    "2024-11-02 \u661f\u671f\u516d ",
+                    22.0
+                ],
+                [
+                    "2024-11-03 \u661f\u671f\u65e5 ",
+                    21.0
+                ],
+                [
+                    "2024-11-04 \u661f\u671f\u4e00 ",
+                    15.0
+                ],
+                [
+                    "2024-11-05 \u661f\u671f\u4e8c ",
+                    14.0
+                ],
+                [
+                    "2024-11-06 \u661f\u671f\u4e09 ",
+                    15.0
+                ],
+                [
+                    "2024-11-07 \u661f\u671f\u56db ",
+                    16.0
+                ],
+                [
+                    "2024-11-08 \u661f\u671f\u4e94 ",
+                    17.0
+                ],
+                [
+                    "2024-11-09 \u661f\u671f\u516d ",
+                    19.0
+                ],
+                [
+                    "2024-11-10 \u661f\u671f\u65e5 ",
+                    20.0
+                ],
+                [
+                    "2024-11-11 \u661f\u671f\u4e00",
+                    18.0
+                ],
+                [
+                    "2024-11-12 \u661f\u671f\u4e8c",
+                    18.0
+                ],
+                [
+                    "2024-11-13 \u661f\u671f\u4e09",
+                    17.0
+                ],
+                [
+                    "2024-11-14 \u661f\u671f\u56db",
+                    16.0
+                ],
+                [
+                    "2024-11-15 \u661f\u671f\u4e94",
+                    20.0
+                ],
+                [
+                    "2024-11-16 \u661f\u671f\u516d",
+                    16.0
+                ],
+                [
+                    "2024-11-17 \u661f\u671f\u65e5",
+                    12.0
+                ],
+                [
+                    "2024-11-18 \u661f\u671f\u4e00",
+                    10.0
+                ],
+                [
+                    "2024-11-19 \u661f\u671f\u4e8c",
+                    11.0
+                ],
+                [
+                    "2024-11-20 \u661f\u671f\u4e09",
+                    13.0
+                ],
+                [
+                    "2024-11-21 \u661f\u671f\u56db",
+                    15.0
+                ],
+                [
+                    "2024-11-22 \u661f\u671f\u4e94",
+                    12.0
+                ],
+                [
+                    "2024-11-23 \u661f\u671f\u516d",
+                    11.0
+                ],
+                [
+                    "2024-11-24 \u661f\u671f\u65e5",
+                    13.0
+                ],
+                [
+                    "2024-11-25 \u661f\u671f\u4e00",
+                    13.0
+                ],
+                [
+                    "2024-11-26 \u661f\u671f\u4e8c",
+                    4.0
+                ],
+                [
+                    "2024-11-27 \u661f\u671f\u4e09",
+                    5.0
+                ],
+                [
+                    "2024-11-28 \u661f\u671f\u56db",
+                    5.0
+                ],
+                [
+                    "2024-11-29 \u661f\u671f\u4e94",
+                    13.0
+                ],
+                [
+                    "2024-11-30 \u661f\u671f\u516d",
+                    15.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        },
+        {
+            "type": "line",
+            "name": "\u6700\u4f4e\u6c14\u6e29",
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "stackStrategy": "samesign",
+            "data": [
+                [
+                    "2024-11-01 \u661f\u671f\u4e94 ",
+                    14.0
+                ],
+                [
+                    "2024-11-02 \u661f\u671f\u516d ",
+                    14.0
+                ],
+                [
+                    "2024-11-03 \u661f\u671f\u65e5 ",
+                    11.0
+                ],
+                [
+                    "2024-11-04 \u661f\u671f\u4e00 ",
+                    6.0
+                ],
+                [
+                    "2024-11-05 \u661f\u671f\u4e8c ",
+                    7.0
+                ],
+                [
+                    "2024-11-06 \u661f\u671f\u4e09 ",
+                    9.0
+                ],
+                [
+                    "2024-11-07 \u661f\u671f\u56db ",
+                    13.0
+                ],
+                [
+                    "2024-11-08 \u661f\u671f\u4e94 ",
+                    16.0
+                ],
+                [
+                    "2024-11-09 \u661f\u671f\u516d ",
+                    15.0
+                ],
+                [
+                    "2024-11-10 \u661f\u671f\u65e5 ",
+                    13.0
+                ],
+                [
+                    "2024-11-11 \u661f\u671f\u4e00",
+                    14.0
+                ],
+                [
+                    "2024-11-12 \u661f\u671f\u4e8c",
+                    16.0
+                ],
+                [
+                    "2024-11-13 \u661f\u671f\u4e09",
+                    16.0
+                ],
+                [
+                    "2024-11-14 \u661f\u671f\u56db",
+                    15.0
+                ],
+                [
+                    "2024-11-15 \u661f\u671f\u4e94",
+                    14.0
+                ],
+                [
+                    "2024-11-16 \u661f\u671f\u516d",
+                    9.0
+                ],
+                [
+                    "2024-11-17 \u661f\u671f\u65e5",
+                    6.0
+                ],
+                [
+                    "2024-11-18 \u661f\u671f\u4e00",
+                    4.0
+                ],
+                [
+                    "2024-11-19 \u661f\u671f\u4e8c",
+                    8.0
+                ],
+                [
+                    "2024-11-20 \u661f\u671f\u4e09",
+                    8.0
+                ],
+                [
+                    "2024-11-21 \u661f\u671f\u56db",
+                    8.0
+                ],
+                [
+                    "2024-11-22 \u661f\u671f\u4e94",
+                    5.0
+                ],
+                [
+                    "2024-11-23 \u661f\u671f\u516d",
+                    6.0
+                ],
+                [
+                    "2024-11-24 \u661f\u671f\u65e5",
+                    11.0
+                ],
+                [
+                    "2024-11-25 \u661f\u671f\u4e00",
+                    2.0
+                ],
+                [
+                    "2024-11-26 \u661f\u671f\u4e8c",
+                    0.0
+                ],
+                [
+                    "2024-11-27 \u661f\u671f\u4e09",
+                    0.0
+                ],
+                [
+                    "2024-11-28 \u661f\u671f\u56db",
+                    2.0
+                ],
+                [
+                    "2024-11-29 \u661f\u671f\u4e94",
+                    2.0
+                ],
+                [
+                    "2024-11-30 \u661f\u671f\u516d",
+                    5.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6700\u9ad8\u6c14\u6e29",
+                "\u6700\u4f4e\u6c14\u6e29"
+            ],
+            "selected": {},
+            "show": true,
+            "top": "10%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "name": "\u65e5\u671f",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0,
+            "data": [
+                "2024-11-01 \u661f\u671f\u4e94 ",
+                "2024-11-02 \u661f\u671f\u516d ",
+                "2024-11-03 \u661f\u671f\u65e5 ",
+                "2024-11-04 \u661f\u671f\u4e00 ",
+                "2024-11-05 \u661f\u671f\u4e8c ",
+                "2024-11-06 \u661f\u671f\u4e09 ",
+                "2024-11-07 \u661f\u671f\u56db ",
+                "2024-11-08 \u661f\u671f\u4e94 ",
+                "2024-11-09 \u661f\u671f\u516d ",
+                "2024-11-10 \u661f\u671f\u65e5 ",
+                "2024-11-11 \u661f\u671f\u4e00",
+                "2024-11-12 \u661f\u671f\u4e8c",
+                "2024-11-13 \u661f\u671f\u4e09",
+                "2024-11-14 \u661f\u671f\u56db",
+                "2024-11-15 \u661f\u671f\u4e94",
+                "2024-11-16 \u661f\u671f\u516d",
+                "2024-11-17 \u661f\u671f\u65e5",
+                "2024-11-18 \u661f\u671f\u4e00",
+                "2024-11-19 \u661f\u671f\u4e8c",
+                "2024-11-20 \u661f\u671f\u4e09",
+                "2024-11-21 \u661f\u671f\u56db",
+                "2024-11-22 \u661f\u671f\u4e94",
+                "2024-11-23 \u661f\u671f\u516d",
+                "2024-11-24 \u661f\u671f\u65e5",
+                "2024-11-25 \u661f\u671f\u4e00",
+                "2024-11-26 \u661f\u671f\u4e8c",
+                "2024-11-27 \u661f\u671f\u4e09",
+                "2024-11-28 \u661f\u671f\u56db",
+                "2024-11-29 \u661f\u671f\u4e94",
+                "2024-11-30 \u661f\u671f\u516d"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "name": "\u6e29\u5ea6\uff08\u5355\u4f4d\u00b0C\uff09",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "2024\u5e7411\u6708\u6700\u9ad8\u6c14\u6e29\u4e0e\u6700\u4f4e\u6c14\u6e29\u8d8b\u52bf",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ]
+};
+        chart_7f186c35d0374b3d93dbe910476b07f8.setOption(option_7f186c35d0374b3d93dbe910476b07f8);
+    </script>
+</body>
+</html>
+</div>
+    </div>
+</body>
+</html>

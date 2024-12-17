@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>天气数据分析 - 散点图</title>
+    <style>
+     body {
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #4CAF50;
+            overflow: hidden;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #45a049;
+        }
+        .chart-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            max-width: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="青岛历史天气【2024年11月】温度散点图.html">散点图分析</a>
+        <a href="青岛历史天气【2024年11月】天气分布饼图.html">天气分布饼图</a>
+        <a href="青岛历史天气【2024年11月】词云图.html">词云图分析</a>
+        <a href="青岛历史天气【2024年11月】温度趋势图.html">温度趋势图</a>
+    </div>
+    <div class="chart-container">
+        <div><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="c2e84890d1904c8fb2af7be9e7bb6cfe" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_c2e84890d1904c8fb2af7be9e7bb6cfe = echarts.init(
+            document.getElementById('c2e84890d1904c8fb2af7be9e7bb6cfe'), 'white', {renderer: 'canvas'});
+        var option_c2e84890d1904c8fb2af7be9e7bb6cfe = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "scatter",
+            "name": "\u6700\u9ad8\u6c14\u6e29",
+            "symbolSize": 10,
+            "data": [
+                [
+                    14.0,
+                    19.0
+                ],
+                [
+                    14.0,
+                    22.0
+                ],
+                [
+                    11.0,
+                    21.0
+                ],
+                [
+                    6.0,
+                    15.0
+                ],
+                [
+                    7.0,
+                    14.0
+                ],
+                [
+                    9.0,
+                    15.0
+                ],
+                [
+                    13.0,
+                    16.0
+                ],
+                [
+                    16.0,
+                    17.0
+                ],
+                [
+                    15.0,
+                    19.0
+                ],
+                [
+                    13.0,
+                    20.0
+                ],
+                [
+                    14.0,
+                    18.0
+                ],
+                [
+                    16.0,
+                    18.0
+                ],
+                [
+                    16.0,
+                    17.0
+                ],
+                [
+                    15.0,
+                    16.0
+                ],
+                [
+                    14.0,
+                    20.0
+                ],
+                [
+                    9.0,
+                    16.0
+                ],
+                [
+                    6.0,
+                    12.0
+                ],
+                [
+                    4.0,
+                    10.0
+                ],
+                [
+                    8.0,
+                    11.0
+                ],
+                [
+                    8.0,
+                    13.0
+                ],
+                [
+                    8.0,
+                    15.0
+                ],
+                [
+                    5.0,
+                    12.0
+                ],
+                [
+                    6.0,
+                    11.0
+                ],
+                [
+                    11.0,
+                    13.0
+                ],
+                [
+                    2.0,
+                    13.0
+                ],
+                [
+                    0.0,
+                    4.0
+                ],
+                [
+                    0.0,
+                    5.0
+                ],
+                [
+                    2.0,
+                    5.0
+                ],
+                [
+                    2.0,
+                    13.0
+                ],
+                [
+                    5.0,
+                    15.0
+                ]
+            ],
+            "label": {
+                "show": true,
+                "position": "right",
+                "margin": 8,
+                "valueAnimation": false
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6700\u9ad8\u6c14\u6e29"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0,
+            "data": [
+                14.0,
+                14.0,
+                11.0,
+                6.0,
+                7.0,
+                9.0,
+                13.0,
+                16.0,
+                15.0,
+                13.0,
+                14.0,
+                16.0,
+                16.0,
+                15.0,
+                14.0,
+                9.0,
+                6.0,
+                4.0,
+                8.0,
+                8.0,
+                8.0,
+                5.0,
+                6.0,
+                11.0,
+                2.0,
+                0.0,
+                0.0,
+                2.0,
+                2.0,
+                5.0
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "\u6700\u4f4e\u6c14\u6e29\u4e0e\u6700\u9ad8\u6c14\u6e29\u7684\u6563\u70b9\u56fe",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ]
+};
+        chart_c2e84890d1904c8fb2af7be9e7bb6cfe.setOption(option_c2e84890d1904c8fb2af7be9e7bb6cfe);
+    </script>
+</body>
+</html>
+</div>
+         <h2>最低气温与最高气温的散点图</h2>
+        <p>回归方程为：y = 0.74x + 7.90</p>
+    </div>
+</body>
+</html>
